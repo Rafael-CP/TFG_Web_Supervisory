@@ -1,0 +1,7 @@
+VAR
+	MpAxisBasic_0 : MpAxisBasic;
+	AxisParam : MpAxisBasicParType;
+	
+	Alarm1 : Alarm;
+	
+END_VAR	

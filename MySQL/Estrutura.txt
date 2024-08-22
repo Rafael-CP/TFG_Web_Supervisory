@@ -1,0 +1,46 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Parâmetros { //Para variável AxisParam
+  Position FLOAT	
+  Distance FLOAT	
+  Velocity FLOAT	
+  Acceleration FLOAT
+  Deceleration FLOAT	
+  Direction TINYINT	
+  JogVelocity FLOAT
+  JogAcceleration FLOAT
+  JogDeceleration FLOAT
+}
+
+Table Comando { // Maioria para escrita MpAxisBasic
+  Enable BOOL
+  Power BOOL
+  ErrorReset BOOL
+  Home BOOL
+  MoveVelocity BOOL
+  MoveAbsolute BOOL
+  MoveAdditive BOOL
+  Stop BOOL
+  JogPositive BOOL
+  JogNegative BOOL
+  Time TIMESTAMP
+}
+
+Table Análise {
+  ID integer [primary key]
+  Position FLOAT	
+  Velocity FLOAT	
+  Time TIMESTAMP
+}
+
+Table Status {
+  StatusID INT(255)	
+  CommunicationReady BOOL
+  ReadyToPowerOn BOOL
+  PowerOn BOOL
+  IsHomed BOOL
+}
+
+
+

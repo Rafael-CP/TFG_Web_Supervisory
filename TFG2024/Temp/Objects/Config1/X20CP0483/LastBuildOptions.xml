@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.12"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\opcuamap\opcuamap.uar">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\connectivity\opcua\opcuamap.uad" LastWriteTime="2024-07-31 22:42:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\as_tempdecl\config1\globalcomponents\mcelements.var" LastWriteTime="2024-04-23 18:38:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\Connectivity\OpcUA\OpcUaMap.uad&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\OpcUaMap\OpcUaMap.uar&quot; -H &quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; -B B4.93 -c Config1 -P &quot;$(AS_PROJECT_PATH)&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -UseBaseObjectTypeForStructures -Sampling &quot;7,10,20,50,100,200,500,1000,5000&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-08-05 23:13:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\ashwac.br&quot; -L &quot;AsIecCon: V*, astime: V*, McAcpAx: V5.24.1, McAxis: V5.24.1, McBase: V5.24.1, MpAxis: V5.24.1, MpBase: V5.24.1, operator: V*, runtime: V*&quot; -c &quot;Config1&quot; -Z &quot;mappMotion: 5.24.1, FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-08-05 23:13:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;X20CP0483&quot; -Z &quot;mappMotion: 5.24.1, FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\sysconf.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-08-05 23:13:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP0483&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\asfw.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware -Z &quot;mappMotion: 5.24.1, FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-08-05 23:13:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP0483&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\ashwd.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd -Z &quot;mappMotion: 5.24.1, FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-08-05 23:13:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\iomap.iom" LastWriteTime="2024-04-23 18:23:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\IoMap.iom&quot;  -arconfig -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;X20CP0483&quot; -Z &quot;mappMotion: 5.24.1, FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcdrivelog.br">
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\mappmotion\5.24.1\modules\mcdrivelog\v5.24.1\sg4\mcdrivelog.br" LastWriteTime="2023-09-25 12:26:04" />
+    <CommandLine Parameter="C:\BRAutomation\AS412\AS\TechnologyPackages\mappMotion\5.24.1\Modules\McDriveLog\V5.24.1\SG4\McDriveLog.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\McDriveLog.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpsim.br">
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\mappmotion\5.24.1\modules\mcacpsim\v5.24.1\sg4\ia32\mcacpsim.br" LastWriteTime="2023-09-25 09:52:32" />
+    <CommandLine Parameter="C:\BRAutomation\AS412\AS\TechnologyPackages\mappMotion\5.24.1\Modules\McAcpSim\V5.24.1\SG4\IA32\McAcpSim.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\McAcpSim.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpsys.br">
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\mappmotion\5.24.1\modules\mcacpsys\v5.24.1\sg4\mcacpsys.br" LastWriteTime="2023-09-25 09:52:32" />
+    <CommandLine Parameter="C:\BRAutomation\AS412\AS\TechnologyPackages\mappMotion\5.24.1\Modules\McAcpSys\V5.24.1\SG4\McAcpSys.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\McAcpSys.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpdrv.br">
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\mappmotion\5.24.1\modules\mcacpdrv\v5.24.1\sg4\ia32\mcacpdrv.br" LastWriteTime="2023-09-25 11:48:54" />
+    <CommandLine Parameter="C:\BRAutomation\AS412\AS\TechnologyPackages\mappMotion\5.24.1\Modules\McAcpDrv\V5.24.1\SG4\IA32\McAcpDrv.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\McAcpDrv.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\udbdef.br">
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2022-05-25 04:28:54" />
+    <CommandLine Parameter="C:\BRAutomation\AS412\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\iomap.iom" LastWriteTime="2024-04-23 18:23:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\pvmap.vvm" LastWriteTime="2024-04-23 18:23:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-08-05 23:13:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\cpu.sw" LastWriteTime="2024-04-23 18:40:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\channelconfiguration.xml" LastWriteTime="2024-04-23 18:50:18" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\iomap.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.X20CP0483&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\tcdata\tcdata.imx">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\common_eventlog.tmx" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2022-05-25 04:28:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\Common_EventLog.tmx&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\TCData\TCData.imx&quot; -c &quot;C:\BRAutomation\AS412\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BRAutomation\AS\System\B0493&quot; &quot;C:\BRAutomation\AS412\AS\TechnologyPackages\mappMotion\5.24.1&quot; &quot;C:\BRAutomation\AS412\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -m Libraries.MpBase.Common_EventLog.tmx" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\tcdata\tcdata.imx" LastWriteTime="2024-04-23 18:50:18" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\tcdata\tcdata.s18d" LastWriteTime="2024-04-23 18:50:20" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\accessandsecurity\userrolesystem\role.role" LastWriteTime="2024-04-23 18:23:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Role.br&quot; -zip -B B4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\accessandsecurity\userrolesystem\user.user" LastWriteTime="2024-04-23 18:23:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\accessandsecurity\userrolesystem\role.role" LastWriteTime="2024-04-23 18:23:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\User.br&quot; -zip -B B4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2024-04-23 18:23:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\FWRules.br&quot; -zip -B B4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axisconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\mappMotion\AxisConfig.axis&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\AxisConfig.br&quot; -zip -B B4.93 -L &quot;McAcpAx: V5.24.1, McAxis: V5.24.1, McBase: V5.24.1, MpAxis: V5.24.1&quot; -z 5.24.1 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\axis1ctrl.ox" LastWriteTime="2024-08-06 22:24:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\cpu.per" LastWriteTime="2024-04-23 18:23:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Axis1Ctrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\X20CP0483\LT.ofs&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic1 -p 2 -s &quot;Axis1Ctrl&quot; -L &quot;AsIecCon: V*, astime: V*, McAcpAx: V5.24.1, McAxis: V5.24.1, McBase: V5.24.1, MpAxis: V5.24.1, MpBase: V5.24.1, operator: V*, runtime: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\axis1ctrl.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\a.out" LastWriteTime="2024-08-06 22:24:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Axis1Ctrl.ox&quot; -T SG4 -r Cyclic1 -G V4.1.2  -B B4.93 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.o" LastWriteTime="2024-08-06 22:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\init.ld.o" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\exit.ld.o" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\_bur_pvdef.st.o" LastWriteTime="2024-08-06 22:24:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Cyclic.ld.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Init.ld.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Exit.ld.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\SG4\Ia32\libMcAcpAx.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\SG4\Ia32\libMpAxis.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\SG4\Ia32\libMcAxis.a&quot; &quot;-Wl,C:\BRAutomation\AS\System\B0493\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\McBase\SG4\Ia32\libMcBase.a&quot; &quot;-Wl,C:\BRAutomation\AS\System\B0493\SG4\Ia32\libastime.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\SG4\Ia32\libMpBase.a&quot; &quot;-Wl,C:\BRAutomation\AS\System\B0493\SG4\Ia32\libruntime.a&quot; &quot;-Wl,C:\BRAutomation\AS\System\B0493\SG4\Ia32\liboperator.a&quot; -specs &quot;C:\BRAutomation\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -nostdlib &quot;C:\BRAutomation\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\lib\libm.a&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.c">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\axis1ctrl\cyclic.ld" LastWriteTime="2024-08-06 22:23:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Cyclic.ld&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Cyclic.ld.c&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Variables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBaseCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxisError.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxisCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAxCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\AS_TempDecl\Config1\GlobalComponents\McElements.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.c" LastWriteTime="2024-08-06 22:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Cyclic.ld.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Cyclic.ld.o&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -specs &quot;C:\BRAutomation\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -ansi -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -w -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Libraries.h&quot; -ansic -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\init.ld.c">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\axis1ctrl\init.ld" LastWriteTime="2024-07-31 22:40:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Init.ld&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Init.ld.c&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Variables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBaseCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxisError.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxisCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAxCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\AS_TempDecl\Config1\GlobalComponents\McElements.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\init.ld.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\init.ld.c" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Init.ld.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Init.ld.o&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -specs &quot;C:\BRAutomation\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -ansi -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -w -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Libraries.h&quot; -ansic -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\exit.ld.c">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\axis1ctrl\exit.ld" LastWriteTime="2024-04-23 18:49:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Exit.ld&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Exit.ld.c&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Variables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBaseCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxisError.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxisCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAxCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\AS_TempDecl\Config1\GlobalComponents\McElements.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\exit.ld.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\exit.ld.c" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Exit.ld.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\Exit.ld.o&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -specs &quot;C:\BRAutomation\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -ansi -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -w -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Libraries.h&quot; -ansic -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\_bur_pvdef.st.c">
+    <Prerequisite ID="c:\brautomation\as412\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2022-05-25 04:28:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.o" LastWriteTime="2024-08-06 22:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\init.ld.o" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\exit.ld.o" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;C:\BRAutomation\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\_bur_pvdef.st.c&quot; -S &quot;Cyclic.ld&quot; &quot;Init.ld&quot; &quot;Exit.ld&quot;  -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl\Variables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBaseCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxisError.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxisCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAxCfg.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\MpAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\AS_TempDecl\Config1\GlobalComponents\McElements.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McBase\McBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\MpBase.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\McAxis.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\McAcpAx.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\_bur_pvdef.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\_bur_pvdef.st.c" LastWriteTime="2024-08-06 22:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.o" LastWriteTime="2024-08-06 22:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\init.ld.o" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\exit.ld.o" LastWriteTime="2024-07-31 22:47:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.fun" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\mcbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\mcaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxis.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\mpaxiserror.typ" LastWriteTime="2024-04-23 18:28:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\mpbase.typ" LastWriteTime="2024-04-23 18:28:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.fun" LastWriteTime="2024-04-23 18:23:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\mappmotion\axisconfig.axis" LastWriteTime="2024-04-25 20:23:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2024-07-29 23:17:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2024-07-31 22:40:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\_bur_pvdef.st.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Axis1Ctrl\_bur_pvdef.st.o&quot; -T SG4 -M IA32 -B B4.93 -G V4.1.2  -s &quot;Axis1Ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BRAutomation\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Axis1Ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\Libraries.h&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcbase.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcbase\sg4\ia32\mcbase.br" LastWriteTime="2023-09-25 11:12:44" />
+    <CommandLine Parameter="$(AS_PROJECT_PATH)\Logical\Libraries\McBase\SG4\Ia32\McBase.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\McBase.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mpbase.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpbase\sg4\ia32\mpbase.br" LastWriteTime="2024-02-14 06:39:14" />
+    <CommandLine Parameter="$(AS_PROJECT_PATH)\Logical\Libraries\MpBase\SG4\Ia32\MpBase.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\MpBase.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mpaxis.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mpaxis\sg4\ia32\mpaxis.br" LastWriteTime="2023-09-25 11:47:44" />
+    <CommandLine Parameter="$(AS_PROJECT_PATH)\Logical\Libraries\MpAxis\SG4\Ia32\MpAxis.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\MpAxis.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcaxis.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcaxis\sg4\ia32\mcaxis.br" LastWriteTime="2023-09-25 11:17:52" />
+    <CommandLine Parameter="$(AS_PROJECT_PATH)\Logical\Libraries\McAxis\SG4\Ia32\McAxis.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\McAxis.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpax.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\mcacpax\sg4\ia32\mcacpax.br" LastWriteTime="2023-09-25 11:17:02" />
+    <CommandLine Parameter="$(AS_PROJECT_PATH)\Logical\Libraries\McAcpAx\SG4\Ia32\McAcpAx.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\McAcpAx.br" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP0483\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\x20cp0483\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\ashwac.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\sysconf.br" LastWriteTime="2024-04-23 19:07:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\asfw.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\ashwd.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\arconfig.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcdrivelog.br" LastWriteTime="2023-09-25 12:26:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpsim.br" LastWriteTime="2023-09-25 09:52:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpsys.br" LastWriteTime="2023-09-25 09:52:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpdrv.br" LastWriteTime="2023-09-25 11:48:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\udbdef.br" LastWriteTime="2022-05-25 04:28:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\iomap.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\tcdata.br" LastWriteTime="2024-04-23 18:50:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\role.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\user.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\fwrules.br" LastWriteTime="2024-04-23 18:50:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axisconfig.br" LastWriteTime="2024-04-25 20:18:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl.br" LastWriteTime="2024-08-06 22:24:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcbase.br" LastWriteTime="2023-09-25 11:12:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mpbase.br" LastWriteTime="2024-02-14 06:39:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mpaxis.br" LastWriteTime="2023-09-25 11:47:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcaxis.br" LastWriteTime="2023-09-25 11:17:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\mcacpax.br" LastWriteTime="2023-09-25 11:17:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp0483\cpu.sw" LastWriteTime="2024-04-23 18:40:56" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\TFG2024.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\BRAutomation\AS412&quot; -S &quot;X20CP0483&quot; -A &quot;X20CP04xx&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP0483\Cpu.sw&quot; -Z &quot;mappMotion: 5.24.1, FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

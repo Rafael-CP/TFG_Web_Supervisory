@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="9" ArVersion="B4.93">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="AxisParam">
+          <Variable Name="Position" />
+          <Variable Name="Distance" />
+          <Variable Name="Velocity" />
+          <Variable Name="Acceleration" />
+          <Variable Name="Deceleration" />
+          <Variable Name="Direction" />
+          <Variable Name="Jog">
+            <Variable Name="Velocity" />
+            <Variable Name="Acceleration" />
+            <Variable Name="Deceleration" />
+          </Variable>
+        </Variable>
+        <Variable Name="gAxis_1" />
+        <Variable Name="MpAxisBasic_0">
+          <Variable Name="Enable" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="Power" />
+          <Variable Name="Home" />
+          <Variable Name="MoveVelocity" />
+          <Variable Name="MoveAbsolute" />
+          <Variable Name="MoveAdditive" />
+          <Variable Name="Stop" />
+          <Variable Name="JogPositive" />
+          <Variable Name="JogNegative" />
+          <Variable Name="Error" />
+          <Variable Name="StatusID" />
+          <Variable Name="Position" />
+          <Variable Name="Velocity" />
+          <Variable Name="IsHomed" />
+          <Variable Name="Info">
+            <Variable Name="CommunicationReady" />
+            <Variable Name="ReadyToPowerOn" />
+          </Variable>
+          <Variable Name="PowerOn" />
+          <Variable Name="InPosition" />
+          <Variable Name="MoveDone" />
+          <Variable Name="MoveActive" />
+        </Variable>
+        <Variable Name="Alarm1">
+          <Variable Name="Description" />
+          <Variable Name="Severity" />
+          <Variable Name="Status" />
+          <Variable Name="Acknowledgement" />
+        </Variable>
+      </GlobalVariables>
+      <Task Name="Axis1Ctrl" />
+    </Module>
+  </DefaultView>
+</OpcUaSource>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
+  <TreeView ID="BR.AS.SystemConfiguration.Presentation-C:\Users\Rafael\Documents\AS\mappAxis_2019000081\Physical\Config1\X20CP1586\mappMotion\Config_1.axis" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
+    <Columns>
+      <Column Index="0" Width="100" Position="0" />
+      <Column Index="1" Width="100" Position="1" />
+      <Column Index="2" Width="100" Position="2" />
+      <Column Index="3" Width="100" Position="3" />
+      <Column Index="4" Width="0" Position="4" />
+    </Columns>
+    <ExpandedNodes>
+      <ExpandedNode Row="0" />
+      <ExpandedNode Row="1" />
+      <ExpandedNode Row="5" />
+      <ExpandedNode Row="6" />
+      <ExpandedNode Row="9" />
+      <ExpandedNode Row="11" />
+      <ExpandedNode Row="13" />
+    </ExpandedNodes>
+    <SelectedNodes />
+    <ZoomIndices />
+  </TreeView>
+  <Versatile ID="BR.AS.SystemConfiguration.Presentation-EditorState-C:\Users\Rafael\Documents\AS\mappAxis_2019000081\Physical\Config1\X20CP1586\mappMotion\Config_1.axis">
+    <Property Name="advancedparametervisibility" Value="False" />
+  </Versatile>
+</State>
