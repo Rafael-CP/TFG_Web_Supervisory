@@ -3,15 +3,28 @@ credentials:
     Rafael:
       email: rafaelcpaes@unifei.edu.br
       name: Rafael Coelho Paes
-      password: '123' # To be replaced with hashed password
+      password: '$2b$12$YASdy0n4t31wC6BJCd5KCulHT.EtjlqitLoxpRSH6oq.G8DGM3uiy' 
+      role: 'Aluno'
+      # Senha Segura! :)
     Jeremias:
       email: jeremias@unifei.edu.br
       name: Jeremias Barbosa Machado
-      password: '123' # To be replaced with hashed password
+      password: '123' # Senha exposta! :O
+      role: 'Professor Orientador'
+    Lenarth:
+      email: lenarth@unifei.edu.br
+      name: Luiz Lenarth Gabriel Vermaas
+      password: '123' # Senha exposta! :O
+      role: 'Professor'
+    Waldecir:
+      email: waldecir.souza@unifei.edu.br
+      name: Carlos Waldecir de Souza
+      password: '123' # Senha exposta! :O
+      role: 'Professor'
 cookie:
   expiry_days: 0
   key: random_signature_key # Must be string
   name: random_cookie_name
 preauthorized:
   emails:
-  - melsby@gmail.com
+  - test@gmail.com

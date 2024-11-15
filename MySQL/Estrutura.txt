@@ -11,6 +11,7 @@ Table Parâmetros { //Para variável AxisParam
   JogVelocity FLOAT
   JogAcceleration FLOAT
   JogDeceleration FLOAT
+  Time TIMESTAMP(3)
 }
 
 Table Comando { // Maioria para escrita MpAxisBasic
@@ -24,23 +25,30 @@ Table Comando { // Maioria para escrita MpAxisBasic
   Stop BOOL
   JogPositive BOOL
   JogNegative BOOL
-  Time TIMESTAMP
+  Time TIMESTAMP(3)
 }
 
 Table Análise {
   ID integer [primary key]
   Position FLOAT	
   Velocity FLOAT	
-  Time TIMESTAMP
+  Time TIMESTAMP(3)
 }
 
 Table Status {
+  Error BOOL
   StatusID INT(255)	
-  CommunicationReady BOOL
-  ReadyToPowerOn BOOL
   PowerOn BOOL
   IsHomed BOOL
+  MoveDone BOOL
+  MoveActive BOOL
+  Time TIMESTAMP(3)
 }
 
-
+Table Alarmes {
+  Descrição VARCHAR(100)
+  Severidade INT
+  Reconhecimento BOOL
+  Time TIMESTAMP(3)
+}
 

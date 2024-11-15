@@ -17,8 +17,6 @@ authenticator = stauth.Authenticate(
     config['preauthorized']
 )
 
-authenticator.logout("Sair", "sidebar")
-
 st.sidebar.markdown("""
     <style>
 
@@ -44,12 +42,20 @@ st.sidebar.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+user = st.session_state["name"]
+user = str(user)
+
+with st.sidebar:
+    st.write('Olá, ' + user.rsplit(' ')[0] + "!")
+
+authenticator.logout("Sair", "sidebar")
+
 st.title("Documetação")
 st.write("Nesta página você poderá consultar a documentação de todos os dispositivos utilizados no projeto.\
          \n A aba inicial fornece o  diagrama de montagem de como os equipamentos estão conectados fisicamente.\
          \n Nas demais abas, é possível fazer o download da documentação!")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Instalações", "Controlador", "Drive", "Servomotor", "Switch"])
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Instalações", "Controlador", "Drive", "Servomotor", "Switch", "Guias"])
 
 with tab1:
     st.image('images/network.png', caption="Diagrama de montagem da bancada de testes",width = 600)
@@ -125,3 +131,19 @@ with tab5:
         st.download_button(label="Catalyst 2960 Switch Getting Started Guide",
         data=PDFfile,
         file_name="9368.pdf",key=7)
+
+with tab6:
+    st.write("Foram criados dois guias para auxiliar os alunos de automação na criação de um supervisório web e no uso da bancada contendo o controlador, servo-drive e o servo-motor. Todos os códigos e arquivos utilizados (incluindo o guia) estão disponíveis no repositório do GitHub no link:")
+    st.write('https://github.com/Rafael-CP/TFG_Web_Supervisory')
+
+    with open("documentation/Guides/Guia_Bancada_B_R.pdf", "rb") as pdf_file:
+        PDFfile = pdf_file.read()
+        st.download_button(label="Guia de Configuração Bancada Didática B&R",
+        data=PDFfile,
+        file_name="Guia_Bancada_B_R.pdf",key=8)
+
+    with open("documentation/Guides/Guia_Supervisório_Web.pdf", "rb") as pdf_file:
+        PDFfile = pdf_file.read()
+        st.download_button(label="Guia de Desenvolvimento Supervisório Web",
+        data=PDFfile,
+        file_name="Guia_Supervisório_Web.pdf",key=9)

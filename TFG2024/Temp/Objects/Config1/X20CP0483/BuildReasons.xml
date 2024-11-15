@@ -1,38 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildReasons>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.c">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\axis1ctrl\cyclic.ld" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.c" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\_bur_pvdef.st.c">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.o" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\_bur_pvdef.st.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\_bur_pvdef.st.c" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\a.out">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\cyclic.ld.o" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\axis1ctrl.ox">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\a.out" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl.br">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl\axis1ctrl.ox" differs.
-</BuildReason>
-  </Rule>
   <Rule ID="#cpu_tp.mak">
     <BuildReason>Rule is forced.</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\x20cp0483\transfer.lst">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\x20cp0483\axis1ctrl.br" differs.
-</BuildReason>
   </Rule>
 </BuildReasons>

@@ -24,6 +24,14 @@ authenticator = stauth.Authenticate(
     config['preauthorized']
 )
 
+user = st.session_state["name"]
+user = str(user)
+st.write('Olá, ' + user + "!")
+
+with st.sidebar:
+    st.write('Olá, ' + user.rsplit(' ')[0] + "!")
+
+
 authenticator.logout("Sair", "sidebar")
 
 st.sidebar.markdown("""
@@ -92,7 +100,7 @@ async def main():
 
         while(True):          
             with placeholder.container():
-                df = conn.query('SELECT * FROM análise ORDER BY Time DESC LIMIT 500;', ttl=0.5)
+                df = conn.query('SELECT * FROM análise ORDER BY Time DESC LIMIT 100;', ttl=0) # TTL => muda a taxa de atualizacao do grafico
 
                 col1, col2= st.columns(2)
                 

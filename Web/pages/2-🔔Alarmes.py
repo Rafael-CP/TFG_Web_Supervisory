@@ -20,8 +20,6 @@ authenticator = stauth.Authenticate(
     config['preauthorized']
 )
 
-authenticator.logout("Sair", "sidebar")
-
 st.sidebar.markdown("""
     <style>
 
@@ -46,6 +44,14 @@ st.sidebar.markdown("""
         visibility: hidden;}
     </style>
 """, unsafe_allow_html=True)
+
+user = st.session_state["name"]
+user = str(user)
+
+with st.sidebar:
+    st.write('Olá, ' + user.rsplit(' ')[0] + "!")
+
+authenticator.logout("Sair", "sidebar")
 
 st.title("Página de Alarmes")
 
@@ -108,4 +114,10 @@ async def main():
 
         
 if __name__ == "__main__":
-    asyncio.run(main())
+    user = st.session_state["username"]
+    role = config["credentials"]["usernames"][user]["role"]
+
+    if role == "Aluno":
+        st.header('Desculpe, mas você não tem permissão para acessar esta página :(')
+    else:
+        asyncio.run(main())

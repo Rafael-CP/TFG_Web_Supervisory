@@ -148,7 +148,7 @@ async def main():
 
       mydb.commit() # Atualiza banco de dados
 
-      #await asyncio.sleep(5) # Velocidade em que Banco de dados será atualizado
+      await asyncio.sleep(0.1) # Velocidade em que Banco de dados será atualizado
 
 if __name__ == "__main__":
   asyncio.run(main())

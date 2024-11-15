@@ -24,8 +24,6 @@ authenticator = stauth.Authenticate(
     config['preauthorized']
 )
 
-authenticator.logout("Sair", "sidebar")
-
 st.sidebar.markdown("""
     <style>
 
@@ -51,26 +49,41 @@ st.sidebar.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+user = st.session_state["name"]
+user = str(user)
+
+
+with st.sidebar:
+    st.write('Olá, ' + user.rsplit(' ')[0] + "!")
+
+authenticator.logout("Sair", "sidebar")
+
 url = "opc.tcp://127.0.0.1:4840/"
 conn = st.connection('mysql', type='sql') # C:\Users\Rafael\.streamlit\secrets.toml
 
 st.title("Consulta ao Banco de Dados")
 async def main():
-   async with Client(url=url) as client:
+    async with Client(url=url) as client:
+            
+        opcao_db = st.selectbox("Selecione o Banco de Dados a ser analisado", ("Parâmetros", "Comando", "Análise", "Status"))
+
+        # Adicionar seletor de dias do mes https://docs.streamlit.io/develop/api-reference/widgets/st.date_input
+        date_db = st.date_input("Data")
+
+        # Seletor de quantidade de dados a serem exibidos na tabela.
+        num_db = st.slider("Escolha o período dos dados que deseja analisar", value=(time(12, 00), time(13, 00)))
+
+        query_db = 'SELECT * FROM %s WHERE TIME BETWEEN "%s" AND "%s"' % (opcao_db, str(date_db) + " " + str(num_db[0].hour) + ":" + str(num_db[0].minute), (str(date_db)) + " " + str(num_db[1].hour) + ":" + str(num_db[1].minute))
         
-    opcao_db = st.selectbox("Selecione o Banco de Dados a ser analisado", ("Parâmetros", "Comando", "Análise", "Status"))
-
-    # Adicionar seletor de dias do mes https://docs.streamlit.io/develop/api-reference/widgets/st.date_input
-    date_db = st.date_input("Data")
-
-    # Seletor de quantidade de dados a serem exibidos na tabela.
-    num_db = st.slider("Escolha o período dos dados que deseja analisar", value=(time(12, 00), time(13, 00)))
-
-    query_db = 'SELECT * FROM %s WHERE TIME BETWEEN "%s" AND "%s"' % (opcao_db, str(date_db) + " " + str(num_db[0].hour) + ":" + str(num_db[0].minute), (str(date_db)) + " " + str(num_db[1].hour) + ":" + str(num_db[1].minute))
-    
-    df = conn.query(query_db, ttl=0)
-    st.dataframe(df, hide_index=True)
+        df = conn.query(query_db, ttl=0)
+        st.dataframe(df, hide_index=True)
 
 if __name__ == "__main__":
 
-    asyncio.run(main())
+    user = st.session_state["username"]
+    role = config["credentials"]["usernames"][user]["role"]
+
+    if role == "Aluno":
+        st.header('Desculpe, mas você não tem permissão para acessar esta página :(')
+    else:
+        asyncio.run(main())

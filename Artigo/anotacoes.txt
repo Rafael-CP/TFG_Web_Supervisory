@@ -1,0 +1,14 @@
+Alterar:
+
+Feito:
+X Introdução - O que será o trabalho (contextualizar mais)
+X breve descrição entre a seção e subseção
+X remover tópico de python e banco de dados sql
+X Seção II (controle distribuído) - tentar encaixar em outro lugar  => Colocado como subseção do cap 2, que agora é estrutura de hardware
+X citar hardware primeiro 
+X código em látex -> apêndice para código
+X tirar "etc." e primeira pessoa de alguns locais
+X Alterar ordem das figuras -> [H] em todas 
+x Atualizar Seção e imagem das tabelas do sql
+X Citar IIOT e outras tecnologias em crescente -> Resumo, Introdução, VII, conclusão
+X colocar biografia

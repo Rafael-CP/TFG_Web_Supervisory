@@ -24,8 +24,8 @@ button[title="View fullscreen"]{
 )
 
 # Centralizando imagem: 5 colunas e a imagem na coluna central
-l1, l2, l3, l4, center, r1, r2, r3, r4= st.columns(9)
-with l4:
+l1, l2, l3, l4, l5, center, r1, r2, r3, r4, r5 = st.columns(11)
+with l5:
     st.image('images/UNIFEI.png',width=250)
 
 st.write('Bem-vindo ao Sistema Supervisório Web!')
@@ -44,7 +44,8 @@ authenticator = stauth.Authenticate(
 if st.session_state["authentication_status"] is None:
     st.warning(':old_key: Por favor informe Usuário e Senha')
 
-authenticator.login(fields = {'Form name':'Entrar no Sistema', 'Username':'Usuário', 'Password':'Senha','Login':'Entrar'})
+name, authentication_status, username = authenticator.login(fields = {'Form name':'Entrar no Sistema', 'Username':'Usuário', 'Password':'Senha','Login':'Entrar'})
+
 if st.session_state["authentication_status"]:
     authenticator.logout()
     st.switch_page("pages/1-📈Dashboard.py")    

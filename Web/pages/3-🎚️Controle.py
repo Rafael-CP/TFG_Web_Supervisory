@@ -21,8 +21,6 @@ authenticator = stauth.Authenticate(
     config['preauthorized']
 )
 
-authenticator.logout("Sair", "sidebar")
-
 st.sidebar.markdown("""
     <style>
 
@@ -47,6 +45,14 @@ st.sidebar.markdown("""
         visibility: hidden;}
     </style>
 """, unsafe_allow_html=True)
+
+user = st.session_state["name"]
+user = str(user)
+
+with st.sidebar:
+    st.write('Olá, ' + user.rsplit(' ')[0] + "!")
+
+authenticator.logout("Sair", "sidebar")
 
 conn = st.connection('mysql', type='sql') # C:\Users\Rafael\.streamlit\secrets.toml
 url = "opc.tcp://127.0.0.1:4840/"
@@ -184,5 +190,10 @@ async def main():
                     st.metric("Posição atual", df['Position'])  
 
 if __name__ == "__main__":
+    user = st.session_state["username"]
+    role = config["credentials"]["usernames"][user]["role"]
 
-    asyncio.run(main())
+    if role != "Professor Orientador":
+        st.header('Desculpe, mas você não tem permissão para acessar esta página :(')
+    else:
+        asyncio.run(main())
