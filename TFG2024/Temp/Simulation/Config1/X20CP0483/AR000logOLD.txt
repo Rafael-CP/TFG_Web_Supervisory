@@ -1,21 +1,21 @@
-Sun Nov 10 20:24:37 2024
+Fri Nov 15 17:44:40 2024
 COPYRIGHT (C) B&R Industrial Automation GmbH
 
-Sun Nov 10 20:24:37 2024
+Fri Nov 15 17:44:40 2024
 No ARsim registration found!
 
-Sun Nov 10 20:24:37 2024
-InstanceName: 0000018b2a4f4ed0
+Fri Nov 15 17:44:40 2024
+InstanceName: 000000450635abef
 
-Sun Nov 10 20:24:37 2024
+Fri Nov 15 17:44:40 2024
 WorkingDirectory: C:\Users\Rafael\Documents\UNIFEI\2024.1\TFG\TFG2024\Temp\Simulation\Config1\X20CP0483\
 
-Sun Nov 10 20:24:37 2024
+Fri Nov 15 17:44:40 2024
 COMMAND_COLDSTART
 
-Sun Nov 10 20:24:39 2024
+Fri Nov 15 17:44:43 2024
 Version: B4.93
 
-Sun Nov 10 20:55:11 2024
+Fri Nov 15 19:53:39 2024
 COMMAND_TERMINATE
 
